@@ -1,7 +1,7 @@
 #include "dictionary.h"
 
-void initializeDataDictionary(const char *dictionaryName) {
-    long mainHeader = -1;
+bool initializeDataDictionary(const char *dictionaryName) {
+    long mainHeader = EMPTY_POINTER;
     
     printf("Initializing Data Dictionary...\n");
 
@@ -9,5 +9,5 @@ void initializeDataDictionary(const char *dictionaryName) {
 
     fwrite(&mainHeader, sizeof(mainHeader), 1, dictionary);
 
-    long currentDir = ftell(dictionary);
+    return(true);
 }
