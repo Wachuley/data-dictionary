@@ -2,6 +2,7 @@
 #define DICTIONARY_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define EMPTY_POINTER -1
 
