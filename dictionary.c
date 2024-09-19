@@ -1,6 +1,6 @@
 #include "dictionary.h"
 
-bool initializeDataDictionary(const char *dictionaryName) {
+int initializeDataDictionary(const char *dictionaryName) {
     long mainHeader = EMPTY_POINTER;
     
     printf("Initializing Data Dictionary...\n");
@@ -9,5 +9,5 @@ bool initializeDataDictionary(const char *dictionaryName) {
 
     fwrite(&mainHeader, sizeof(mainHeader), 1, dictionary);
 
-    return(true);
+    return EXIT_SUCCES;
 }
