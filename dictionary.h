@@ -5,6 +5,6 @@
 
 #define EMPTY_POINTER -1
 
-void initializeDataDictionary();
+bool initializeDataDictionary(const char *dictionaryName);
 
 #endif
