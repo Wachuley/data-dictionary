@@ -1,7 +1,7 @@
 #include "dictionary.h"
 
-void initializeDataDictionary() {
+void initializeDataDictionary(const char *dictionaryName) {
     printf("Initializing Data Dictionary...\n");
 
-    FILE *dictionary = fopen("Dictionary Programming Languajes", "w+");
+    FILE *dictionary = fopen(DictionaryName, "w+");
 }
