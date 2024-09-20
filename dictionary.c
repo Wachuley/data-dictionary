@@ -9,5 +9,7 @@ int initializeDataDictionary(const char *dictionaryName) {
 
     fwrite(&mainHeader, sizeof(mainHeader), 1, dictionary);
 
+    fseek(dictionary, 50, SEEK_SET);
+
     return EXIT_SUCCES;
 }
